@@ -1,0 +1,96 @@
+{% extends "base.html" %}
+{% block start %}
+    <!-- <h1>Welcome to My Simple HTML Page</h1>
+    <a href="/contact/">
+        Contact
+    </a>
+    <a href="/about/">
+        About
+    </a>
+  
+    {{ peoples }} -->
+    <!-- <table class="table">
+        <tr>
+          <th>S.no</th>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Clearance</th>
+        </tr>
+       {% for p in peoples %}
+       <tr>
+        <td>{{forloop.counter}}</td>
+        <td>{{p.Name}}</td>
+        <td>{{p.Age}}</td>
+        <td {% if p.Age > "18" %} style="background: #e61919;" {% endif %}>
+            {% if p.Age > "18" %}
+            👇
+            {%else%}
+            👍
+        {% endif %}
+        </td>
+            
+       </tr>
+       {% endfor%}
+      </table>
+    <p>{{text}}</p>
+    {% if "Vegetable" in v %}
+    <p>Vegetable is in the list</p>
+    {% endif %} -->
+    <!-- <h2>Conclusion</h2> -->
+    <!-- <p>Feel free to modify this template to suit your needs!</p> -->
+
+    <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Food Adda!</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/about/">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="recipe/">Add Recipe</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact/">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Home Section -->
+<header class="bg-image text-center text-white d-flex justify-content-center align-items-center" id="home">
+    <div class="text-center">
+        <h1>Welcome to Food Adda</h1>
+        <p>Where Culinary Dreams Come True</p>
+        <a href="/about/" class="btn btn-primary mt-3">Discover More</a>
+    </div>
+</header>
+
+<!-- About Section -->
+<section class="container mt-5" id="about">
+    <div class="row align-items-center">
+        <div class="col-md-6">
+            <img src="https://images.pexels.com/photos/262978/pexels-photo-262978.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="img-fluid rounded" alt="About Us">
+        </div>
+        <div class="col-md-6">
+            <h2>About Us</h2>
+            <p>At Food adda, we believe in bringing people together through the love of food. Whether you're a seasoned chef or a home cook, our platform allows you to share your culinary creations with the world. We also provide a vast collection of recipes for you to explore and enjoy.</p>
+            <a href="/recipe/" class="btn btn-outline-primary mt-3">Share Your Recipe</a>
+        </div>
+    </div>
+</section>
+
+<!-- Add Recipe Section -->
+    
+
+
+     
+{% endblock %}

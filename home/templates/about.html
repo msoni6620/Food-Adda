@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block start %}
+       
+    <div style="text-align: center; padding: 20px;">
+        <p>Welcome to Contact Page</p>
+        <a href="/" style="text-decoration: none; color: #007bff; margin-right: 15px;">Home</a>
+        <a href="/about/" style="text-decoration: none; color: #007bff; margin-right: 15px;">About</a>
+        <a href="/recipe/" style="text-decoration: none; color: #007bff;">Recipe</a>
+    </div>
+    
+    <!-- Contact Section -->
+    <section class="container" id="contact" style="max-width: 600px; margin: 50px auto; background-color: #fff; padding: 30px; border-radius: 10px; box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);">
+        <h2 style="text-align: center; color: #333; margin-bottom: 20px;">Contact Us</h2>
+        <form>
+            <div class="mb-3" style="margin-bottom: 20px;">
+                <label for="name" class="form-label" style="font-weight: bold; color: #333;">Name</label>
+                <input type="text" class="form-control" id="name" style="width: 100%; padding: 10px; border-radius: 5px; border: 1px solid #ced4da; box-sizing: border-box;">
+            </div>
+            <div class="mb-3" style="margin-bottom: 20px;">
+                <label for="email" class="form-label" style="font-weight: bold; color: #333;">Email</label>
+                <input type="email" class="form-control" id="email" style="width: 100%; padding: 10px; border-radius: 5px; border: 1px solid #ced4da; box-sizing: border-box;">
+            </div>
+            <div class="mb-3" style="margin-bottom: 20px;">
+                <label for="message" class="form-label" style="font-weight: bold; color: #333;">Message</label>
+                <textarea class="form-control" id="message" rows="4" style="width: 100%; padding: 10px; border-radius: 5px; border: 1px solid #ced4da; box-sizing: border-box;"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width: 100%; background-color: #007bff; border: none; padding: 10px; border-radius: 5px; color: #fff; font-size: 16px; cursor: pointer;">Send Message</button>
+        </form>
+    </section>
+   
+    {% endblock %}

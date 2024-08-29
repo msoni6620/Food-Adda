@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+{% block start %}
+<div style="text-align: center; padding: 20px;">
+    <p>Welcome to About Page</p>
+    <a href="/" style="text-decoration: none; color: #007bff; margin-right: 15px;">Home</a>
+    <a href="/contact/" style="text-decoration: none; color: #007bff;  margin-right: 15px;">Contact</a>
+    <a href="/recipe/" style="text-decoration: none; color: #007bff;">Recipe</a>
+</div>
+
+<section style="max-width: 1200px; margin: 50px auto; padding: 20px; background-color: #ffffff; border-radius: 10px; box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);">
+    <h2 style="text-align: center; color: #333333; margin-bottom: 40px;">About Food Adda</h2>
+
+    <!-- Row 1 -->
+    <div style="display: flex; flex-wrap: wrap; margin-bottom: 30px;">
+        <div style="flex: 1; padding: 20px;">
+            <img src="https://restaurantindia.s3.ap-south-1.amazonaws.com/s3fs-public/content9442.jpg" alt="Delicious Food" style="width: 100%; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+        </div>
+        <div style="flex: 1; padding: 20px;">
+            <h3 style="color: #f8b400;">Our Story</h3>
+            <p style="color: #666666; line-height: 1.6;">
+                Welcome to Food Adda, where passion meets flavor. Our journey began with a simple idea: to create a space where food lovers can discover and share their favorite recipes. Whether you are a seasoned chef or a kitchen novice, Food Adda is your ultimate destination for culinary inspiration.
+            </p>
+            <p style="color: #666666; line-height: 1.6;">
+                We believe in the power of good food to bring people together, and our mission is to make cooking an enjoyable and creative experience for everyone.
+            </p>
+        </div>
+    </div>
+
+    <!-- Row 2 -->
+    <div style="display: flex; flex-wrap: wrap; margin-bottom: 30px;">
+        <div style="flex: 1; padding: 20px; order: 2;">
+            <h3 style="color: #f8b400;">Our Vision</h3>
+            <p style="color: #666666; line-height: 1.6;">
+                At Food Adda, we envision a world where food is celebrated as a universal language. Our platform is dedicated to showcasing diverse culinary traditions and promoting the joy of cooking across all cultures.
+            </p>
+            <p style="color: #666666; line-height: 1.6;">
+                We are committed to providing our community with the best recipes, tips, and resources to help everyone create delicious meals with ease.
+            </p>
+        </div>
+        <div style="flex: 1; padding: 20px; order: 1;">
+            <img src="https://assets.architecturaldigest.in/photos/64f85037ec0bc118bdd98aba/16:9/w_2560%2Cc_limit/Untitled%2520design%2520(14).png" alt="Cooking Experience" style="width: 100%; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+        </div>
+    </div>
+
+    <!-- Row 3 -->
+    <div style="display: flex; flex-wrap: wrap;">
+        <div style="flex: 1; padding: 20px;">
+            <img src="https://media.istockphoto.com/id/1081422898/photo/pan-fried-duck.jpg?s=612x612&w=0&k=20&c=kzlrX7KJivvufQx9mLd-gMiMHR6lC2cgX009k9XO6VA=" alt="Community" style="width: 100%; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+        </div>
+        <div style="flex: 1; padding: 20px;">
+            <h3 style="color: #f8b400;">Join Our Community</h3>
+            <p style="color: #666666; line-height: 1.6;">
+                Become a part of the Food Adda community and share your culinary creations with the world. Whether you have a family recipe passed down through generations or a new dish you've just perfected, Food Adda is the place to showcase your talent.
+            </p>
+            <p style="color: #666666; line-height: 1.6;">
+                Connect with fellow food enthusiasts, exchange ideas, and grow your passion for cooking with us. At Food Adda, everyone is welcome at the table.
+            </p>
+        </div>
+    </div>
+</section>
+ {% endblock %}

@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block start %}
+
+<div style="text-align: center; padding: 20px;">
+    <p>Welcome to Recipe Page</p>
+    <a href="/" style="text-decoration: none; color: #007bff; margin-right: 15px;">Home</a>
+    <a href="/contact/" style="text-decoration: none; color: #007bff; margin-right: 15px;">Contact</a>
+    <a href="/about/" style="text-decoration: none; color: #007bff;">About</a>
+</div>
+
+<div class="container mt-5">
+    <form class="col-lg-6 col-md-8 col-sm-10 mx-auto p-4 shadow-lg recipe-form" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <h2 class="text-center">Add Recipe</h2>
+        <hr>
+        <div class="mb-3">
+            <label for="recepieName" class="form-label">Recipe Name</label>
+            <input type="text" name="recepie_name" class="form-control" id="recepieName" required>
+        </div>
+        <div class="mb-3">
+            <label for="recepieDescription" class="form-label">Recipe Description</label>
+            <textarea class="form-control" name="recepie_description" id="recepieDescription" rows="4" required></textarea>
+        </div>
+        <div class="mb-3">
+            <label for="recepieImage" class="form-label">Upload Image</label>
+            <input type="file" name="recepie_image" class="form-control" id="recepieImage">
+        </div>
+        <button type="submit" class="btn btn-primary w-100">Add Recipe</button>
+    </form>
+</div>
+{% endblock %}
